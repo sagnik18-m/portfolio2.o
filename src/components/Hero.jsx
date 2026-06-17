@@ -96,7 +96,7 @@ export default function Hero() {
               {/* SOCIAL ICONS */}
               <div className="flex gap-5 mt-2">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/sagnik-mondal-20071b240?utm_source=share_via&utm_content=profile&utm_medium=member_androidhttps://linkedin.com"
                   target="_blank"
                   className="text-slate-600 hover:text-blue-600 text-2xl transition"
                 >
@@ -104,7 +104,7 @@ export default function Hero() {
                 </a>
 
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/share/1BKnhPJjJ5/"
                   target="_blank"
                   className="text-slate-600 hover:text-blue-700 text-2xl transition"
                 >
@@ -112,7 +112,7 @@ export default function Hero() {
                 </a>
 
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/sagnik_mondal.18?igsh=bTl0NWk3cGdzMXFy"
                   target="_blank"
                   className="text-slate-600 hover:text-pink-500 text-2xl transition"
                 >
