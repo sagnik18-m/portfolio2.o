@@ -10,7 +10,7 @@ export default function Contact() {
     
     <section
       id="contact"
-      className="relative py-32 bg-slate-50 overflow-hidden"
+      className="relative py-20 bg-lime-50 overflow-hidden"
     >
       <div className="absolute inset-0 opacity-40">
         <div className="h-full w-full bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] bg-[size:30px_30px]" />

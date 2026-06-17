@@ -4,10 +4,10 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative py-32 bg-slate-50 overflow-hidden"
+      className="relative py-20 bg-lime-50 overflow-hidden"
     >
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-40">
+      <div className="py-20 bg-lime-50 absolute inset-0 opacity-40">
         <div
           className="
             h-full
