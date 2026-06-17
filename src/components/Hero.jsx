@@ -84,16 +84,16 @@ export default function Hero() {
               {/* Buttons */}
               <div className="flex gap-4 flex-wrap">
                 <a href="/cv.pdf" download>
-  <button className="px-7 py-3 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition shadow-lg">
-    Download Resume
-  </button>
+ <button className="px-7 py-3 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition shadow-lg cursor-pointer">
+  Download Resume
+</button>
 </a>
 
                 <button
   onClick={() => {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   }}
-  className="px-7 py-3 rounded-xl border border-slate-300 hover:bg-white transition"
+  className="px-7 py-3 rounded-xl border border-slate-300 hover:bg-white transition cursor-pointer"
 >
   Contact Me
 </button>
