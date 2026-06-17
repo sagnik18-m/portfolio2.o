@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import profile from "../assets/profile.jpeg";
 
+
 // Icons (you can also use react-icons if you want)
 import { FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 
@@ -84,9 +85,11 @@ export default function Hero() {
             >
               {/* Buttons */}
               <div className="flex gap-4 flex-wrap">
-                <button className="px-7 py-3 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition shadow-lg">
-                  Download Resume
-                </button>
+                <a href="/cv.pdf" download>
+  <button className="px-7 py-3 rounded-xl bg-blue-600 text-white hover:bg-blue-700 transition shadow-lg">
+    Download Resume
+  </button>
+</a>
 
                 <button className="px-7 py-3 rounded-xl border border-slate-300 hover:bg-white transition">
                   Contact Me
