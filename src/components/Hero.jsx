@@ -54,8 +54,6 @@ export default function Hero() {
                   2000,
                   "React Developer",
                   2000,
-                  "JavaScript Developer",
-                  2000,
                   "Cyber Security Student",
                   2000,
                 ]}
@@ -91,9 +89,14 @@ export default function Hero() {
   </button>
 </a>
 
-                <button className="px-7 py-3 rounded-xl border border-slate-300 hover:bg-white transition">
-                  Contact Me
-                </button>
+                <button
+  onClick={() => {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  }}
+  className="px-7 py-3 rounded-xl border border-slate-300 hover:bg-white transition"
+>
+  Contact Me
+</button>
               </div>
 
               {/* SOCIAL ICONS */}

@@ -6,6 +6,8 @@ import {
 
 export default function Contact() {
   return (
+
+    
     <section
       id="contact"
       className="relative py-32 bg-slate-50 overflow-hidden"
