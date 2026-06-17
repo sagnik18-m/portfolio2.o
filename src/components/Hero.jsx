@@ -144,7 +144,7 @@ export default function Hero() {
                 alt="Sagnik Mondal"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
-                className="relative w-80 h-80 md:w-96 md:h-96 object-cover rounded-full border-4 border-white shadow-2xl"
+                className="relative w-90 h-90 md:w-100 md:h-96 object-cover rounded-full border-4 border-white shadow-2xl"
               />
             </motion.div>
           </div>
