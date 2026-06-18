@@ -7,18 +7,18 @@ export default function About() {
       className="relative min-h-screen overflow-hidden flex items-center py-20"
     >
       {/* Video Background */}
-      {/* <video
+      <video
         autoPlay
         loop
         muted
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/background.mp4" type="video/mp4" />
-      </video> */}
+        <source src="/about.mp4" type="video/mp4" />
+      </video>
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/95" />
+      <div className="absolute inset-0 bg-black/35" />
 
       {/* Glow Effects */}
       <div className="absolute top-20 right-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl opacity-20" />
