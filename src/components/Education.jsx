@@ -22,6 +22,8 @@ export default function Education() {
         <h2 className="text-3xl font-bold text-center mb-12">
           Education
         </h2>
+        
+        
 
         <div className="space-y-6">
           {educationData.map((item, index) => (

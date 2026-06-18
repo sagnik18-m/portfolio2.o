@@ -23,6 +23,8 @@ export default function Experience() {
           Experience
         </h2>
 
+        
+
         <div className="space-y-6">
           {experienceData.map((item, index) => (
             <motion.div
