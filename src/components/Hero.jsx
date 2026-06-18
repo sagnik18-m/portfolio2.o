@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen bg-slate-50 overflow-hidden flex items-center pt-24 md:pt-0"
+      className="relative min-h-screen py-20 bg-lime-50 overflow-hidden flex items-center pt-24 md:pt-0"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-40">

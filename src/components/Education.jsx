@@ -11,7 +11,7 @@ const educationData = [
     degree: "Higher Secondary (Science)",
     institute: "Sarisha High School",
     year: "2020 - 2022",
-    details: "Physics, Chemistry, Mathematics, Computer Science.",
+    details: "Physics, Chemistry, Mathematics, Biology.",
   },
 ];
 

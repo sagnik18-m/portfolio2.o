@@ -23,7 +23,7 @@ export default function Navbar() {
         -translate-x-1/2
         z-50
         w-[95%]
-        max-w-5xl
+        max-w-2xl
         bg-white/80
         backdrop-blur-xl
         border
