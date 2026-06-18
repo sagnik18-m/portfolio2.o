@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 const educationData = [
   {
     degree: "B.Tech in Computer Science",
-    institute: "Your University Name",
+    institute: "The Neotia University",
     year: "2022 - 2026",
     details: "Focused on Web Development, DSA, DBMS, and Software Engineering.",
   },
   {
     degree: "Higher Secondary (Science)",
-    institute: "Your School Name",
+    institute: "Sarisha High School",
     year: "2020 - 2022",
     details: "Physics, Chemistry, Mathematics, Computer Science.",
   },
