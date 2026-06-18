@@ -2,16 +2,16 @@ import { motion } from "framer-motion";
 
 const experienceData = [
   {
-    role: "Frontend Developer Intern",
-    company: "Tech Startup Name",
+    role: "AILABS| Internship Backend using node.js",
+    company: "AILABS",
     duration: "June 2025 - Aug 2025",
     work: "Built responsive UI using React, improved performance and worked on API integration.",
   },
   {
-    role: "Freelance Web Developer",
-    company: "Self-Employed",
-    duration: "2024 - Present",
-    work: "Created portfolio websites and landing pages for clients using React & Tailwind CSS.",
+    role: "Cyber Security Intern| Webel Education & Training",
+    company: "Intern",
+    duration: "Jun’21 - Jul’15 2024",
+    work: "Project on Cryptographic Hashing and Symmetric Encryption.",
   },
 ];
 
