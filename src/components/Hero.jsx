@@ -12,23 +12,32 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen py-20 bg-lime-50 overflow-hidden flex items-center pt-24 md:pt-0"
+      className="relative min-h-screen overflow-hidden flex items-center pt-24 lg:pt-0"
     >
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-40">
-        <div className="h-full w-full bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] bg-[size:30px_30px]" />
-      </div>
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src="/background.mp4" type="video/mp4" />
+      </video>
 
-      {/* Background Blobs */}
-      <div className="absolute top-20 left-10 md:left-20 w-72 md:w-96 h-72 md:h-96 bg-blue-200 rounded-full blur-3xl opacity-20" />
-      <div className="absolute bottom-20 right-10 md:right-20 w-72 md:w-96 h-72 md:h-96 bg-cyan-200 rounded-full blur-3xl opacity-20" />
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/65" />
 
+      {/* Glow Effects */}
+      <div className="absolute top-20 left-10 md:left-20 w-72 md:w-96 h-72 md:h-96 bg-blue-500 rounded-full blur-3xl opacity-20" />
+      <div className="absolute bottom-20 right-10 md:right-20 w-72 md:w-96 h-72 md:h-96 bg-cyan-500 rounded-full blur-3xl opacity-20" />
+
+      {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 w-full">
         <div className="grid lg:grid-cols-2 gap-14 items-center">
 
-          {/* IMAGE FIRST ON MOBILE */}
+          {/* Profile Image */}
           <div className="flex justify-center order-1 lg:order-2">
-
             <motion.div
               animate={{ y: [0, -15, 0] }}
               transition={{
@@ -39,10 +48,10 @@ export default function Hero() {
               className="relative"
             >
               {/* Glow */}
-              <div className="absolute inset-0 rounded-full bg-blue-300 blur-3xl opacity-30 scale-110" />
+              <div className="absolute inset-0 rounded-full bg-cyan-400 blur-3xl opacity-30 scale-110" />
 
-              {/* Ring */}
-              <div className="absolute inset-0 rounded-full border-2 border-blue-300 animate-pulse" />
+              {/* Animated Ring */}
+              <div className="absolute inset-0 rounded-full border-2 border-cyan-400 animate-pulse" />
 
               <motion.img
                 src={profile}
@@ -69,30 +78,22 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* CONTENT */}
+          {/* Content */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
 
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
-              className="text-blue-600 font-medium mb-4"
+              className="text-cyan-400 font-medium mb-4 text-lg"
             >
               👋 Welcome To My Portfolio
             </motion.p>
 
             <motion.h1
-              initial={{
-                opacity: 0,
-                y: 50,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
-              transition={{
-                duration: 1,
-              }}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
               className="
                 text-4xl
                 sm:text-5xl
@@ -100,15 +101,16 @@ export default function Hero() {
                 lg:text-7xl
                 font-extrabold
                 leading-tight
-                text-slate-900
+                text-white
               "
             >
               Sagnik
-              <span className="block text-blue-600">
+              <span className="block text-cyan-400">
                 Mondal
               </span>
             </motion.h1>
 
+            {/* Typing Animation */}
             <div className="mt-5 min-h-[50px]">
               <TypeAnimation
                 sequence={[
@@ -128,11 +130,12 @@ export default function Hero() {
                   sm:text-2xl
                   md:text-3xl
                   font-semibold
-                  text-slate-700
+                  text-slate-200
                 "
               />
             </div>
 
+            {/* Description */}
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -141,7 +144,7 @@ export default function Hero() {
                 mt-6
                 text-base
                 md:text-lg
-                text-slate-600
+                text-slate-300
                 max-w-xl
                 mx-auto
                 lg:mx-0
@@ -151,7 +154,7 @@ export default function Hero() {
               Passionate Frontend Developer specializing in React.js,
               JavaScript and modern web technologies. I enjoy creating
               responsive, user-friendly and visually appealing web
-              applications.
+              applications with modern UI/UX principles.
             </motion.p>
 
             {/* Buttons */}
@@ -169,10 +172,13 @@ export default function Hero() {
                       px-7
                       py-3
                       rounded-xl
-                      bg-blue-600
+                      bg-cyan-500
                       text-white
-                      hover:bg-blue-700
-                      transition
+                      hover:bg-cyan-600
+                      hover:scale-105
+                      active:scale-95
+                      transition-all
+                      duration-300
                       shadow-lg
                       cursor-pointer
                     "
@@ -194,9 +200,14 @@ export default function Hero() {
                     py-3
                     rounded-xl
                     border
-                    border-slate-300
+                    border-white/30
+                    text-white
                     hover:bg-white
-                    transition
+                    hover:text-black
+                    hover:scale-105
+                    active:scale-95
+                    transition-all
+                    duration-300
                     cursor-pointer
                   "
                 >
@@ -212,7 +223,7 @@ export default function Hero() {
                   href="https://www.linkedin.com/in/sagnik-mondal-20071b240"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-slate-600 hover:text-blue-600 text-2xl transition"
+                  className="text-white hover:text-cyan-400 text-2xl transition duration-300"
                 >
                   <FaLinkedin />
                 </a>
@@ -221,7 +232,7 @@ export default function Hero() {
                   href="https://www.facebook.com/share/1BKnhPJjJ5/"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-slate-600 hover:text-blue-700 text-2xl transition"
+                  className="text-white hover:text-blue-500 text-2xl transition duration-300"
                 >
                   <FaFacebook />
                 </a>
@@ -230,12 +241,13 @@ export default function Hero() {
                   href="https://www.instagram.com/sagnik_mondal.18"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-slate-600 hover:text-pink-500 text-2xl transition"
+                  className="text-white hover:text-pink-500 text-2xl transition duration-300"
                 >
                   <FaInstagram />
                 </a>
 
               </div>
+
             </motion.div>
 
           </div>
