@@ -18,7 +18,7 @@ export default function About() {
       </video> */}
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/70" />
+      <div className="absolute inset-0 bg-black/95" />
 
       {/* Glow Effects */}
       <div className="absolute top-20 right-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl opacity-20" />

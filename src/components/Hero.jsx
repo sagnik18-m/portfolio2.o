@@ -26,7 +26,7 @@ export default function Hero() {
       </video>
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/65" />
+      <div className="absolute inset-0 bg-black/35" />
 
       {/* Glow Effects */}
       <div className="absolute top-20 left-10 md:left-20 w-72 md:w-96 h-72 md:h-96 bg-blue-500 rounded-full blur-3xl opacity-20" />
